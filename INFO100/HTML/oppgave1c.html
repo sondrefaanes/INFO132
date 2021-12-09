@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id = "oppgave"></div>
+</body>
+
+<script>
+    var spm = '{"ID": "10","forfatter": "Sondre ","spørsmål": "Hvor skal du reise?", "svar" : " Tokyo", "svarfra" : "Ivar Aasen"}'
+        var info = JSON.parse(spm)
+            document.getElementById("oppgave").innerHTML = info.forfatter + "<br>" + info.spørsmål + info.svar + "<br>" + info.svarfra;
+</script>
+</html>
